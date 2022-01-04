@@ -1,0 +1,27 @@
+{bitlink} -> shortened url with domain name and unique hash value everytime shorten url or create url is called
+
+{bitlink} - 'link' field of response from request
+
+Shorten a Link - POST /v4/shorten
+
+{"created_at":"03/10/2021 18:54:52","link":"clone_bit.ly/FDFl2dt","long_url":"https://www.google.com"}
+
+
+Create a Bitlink -  POST /v4/bitlinks 
+
+{"created_at":"03/10/2021 19:05:08","link":"clone_bit.ly/kmi517I","long_url":"https://www.amazon.com","title":"Amazon"}
+
+
+Retrieve a Bitlink - GET /v4/bitlinks/{bitlink}
+
+{"created_at":"03/10/2021 19:05:08","link":"clone_bit.ly/kmi517I","long_url":"https://www.amazon.com","title":"Amazon"}
+
+
+Update a Bitlink - PATCH /v4/bitlinks/{bitlink} 
+
+{"created_at":"03/10/2021 19:05:08","link":"clone_bit.ly/kmi517I","long_url":"https://www.amazon.com","title":"Amazon WebPage"}
+
+
+Get Clicks for a Bitlink - GET /v4/bitlinks/{bitlink}/clicks
+
+{"clicks":1,"created_at":"03/10/2021 19:05:08"}
